@@ -1,0 +1,85 @@
+.messageItem {
+  position: relative;
+
+  max-width: 70%;
+  padding: 10px 20px 15px;
+  margin-top: 10px;
+
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.tail {
+  margin-top: 20px;
+}
+
+.messageItem.tail::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 13px;
+
+  position: absolute;
+  top: 0;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.outgoing {
+  padding-left: 40px;
+  align-self: flex-end;
+
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.outgoing::after {
+  right: -8px;
+}
+
+.incoming {
+  padding-right: 40px;
+  align-self: flex-start;
+}
+
+.incoming::after {
+  left: -8px;
+}
+
+.messageItem.outgoing.tail {
+  border-top-right-radius: 0;
+}
+
+.messageItem.incoming.tail {
+  border-top-left-radius: 0;
+}
+
+.messageItem.outgoing.tail::after {
+  background-image: url('src/assets/tail_out.svg');
+}
+
+.messageItem.incoming.tail::after {
+  background-image: url('src/assets/tail_in.svg');
+}
+
+.time {
+  position: absolute;
+  bottom: 5px;
+
+  color: var(--placeholder);
+  font-size: 11px;
+}
+
+.incoming .time {
+  right: 5px;
+
+  float: right;
+}
+
+.outgoing .time {
+  left: 5px;
+
+  float: left;
+  color: var(--light);
+}

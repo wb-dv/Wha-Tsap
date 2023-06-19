@@ -1,0 +1,15 @@
+.leftSitebar {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background-color: var(--white);
+  border-right: 1px solid var(--gray);
+  border-radius: 10px 0 0 10px;
+
+  flex: 1;
+}

@@ -1,0 +1,19 @@
+.chat {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 0 10px 10px 0;
+
+  background-color: var(--primary-lighten);
+}
+
+.lightenBg {
+  background-color: var(--primary-white);
+}

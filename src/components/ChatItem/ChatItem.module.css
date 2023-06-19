@@ -1,0 +1,17 @@
+.chatItem {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+
+  background-color: transparent;
+  border-bottom: 1px solid var(--gray);
+
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.chatItem:hover {
+  background-color: var(--primary-bright);
+}
